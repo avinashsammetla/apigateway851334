@@ -8,9 +8,9 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>ReturnOrderManagement</groupId>
-	<artifactId>apigateway851334</artifactId>
+	<artifactId>apigateway</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>apigateway851334</name>
+	<name>apigateway</name>
 	<description>ApiGateway</description>
 	<properties>
 		<java.version>11</java.version>
