@@ -3,8 +3,8 @@ Resources:
   - TargetService:
       Type: AWS::ECS::Service
       Properties:
-        TaskDefinition: "arn:aws:ecs:ap-south-1:860061945305:task-definition/api851334:1"
+        TaskDefinition: "arn:aws:ecs:ap-south-1:860061945305:task-definition/apigateway:1"
         LoadBalancerInfo:
-          ContainerName: "api851334"
+          ContainerName: "apigateway"
           ContainerPort: "9004"
         PlatformVersion: "LATEST"
