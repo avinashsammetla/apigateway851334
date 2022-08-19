@@ -16,7 +16,8 @@ phases:
     - echo Build started on `date`
     - echo $IMAGE_URI
     - mvn clean package -Ddockerfile.skip
-    - docker build --tag $IMAGE_URI .
+    - docker build -t apigateway .
+    - docker tag apigateway $IMAGE_URI
   post_build:
     commands:
     - printenv
