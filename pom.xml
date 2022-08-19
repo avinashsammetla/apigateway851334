@@ -8,9 +8,9 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>ReturnOrderManagement</groupId>
-	<artifactId>apigateway</artifactId>
+	<artifactId>api-gateway</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>apigateway</name>
+	<name>api-gateway</name>
 	<description>ApiGateway</description>
 	<properties>
 		<java.version>11</java.version>
@@ -75,6 +75,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+		<finalName>apigateway</finalName>
 	</build>
 
 </project>
