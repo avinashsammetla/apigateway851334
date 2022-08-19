@@ -65,6 +65,7 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
+			<finalName>apigateway</finalName>
 		</dependencies>
 	</dependencyManagement>
 
