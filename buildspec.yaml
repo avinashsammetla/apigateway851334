@@ -15,15 +15,15 @@ phases:
       - echo Building java
       - mvn clean package
       - echo Building the docker image
-      - docker build -t apigateway .
-      - docker tag apigateway 860061945305.dkr.ecr.ap-south-1.amazonaws.com/return-management-851334:api851334
+      - docker build -t apigateway851334 .
+      - docker tag apigateway851334 860061945305.dkr.ecr.ap-south-1.amazonaws.com/return-management-851334:apigateway851334
   post_build:
     commands:
       - echo Build completed on `date`
       - echo $(docker images)
-      - docker push 860061945305.dkr.ecr.ap-south-1.amazonaws.com/return-management-851334:api851334
+      - docker push 860061945305.dkr.ecr.ap-south-1.amazonaws.com/return-management-851334:apigateway851334
       - echo Writing definition files
-      - printf '[{"name":"api851334","imageUri":"%s"}]' 860061945305.dkr.ecr.ap-south-1.amazonaws.com/return-management-851334:api851334 > taskdefinition.json
+      - printf '[{"name":"api851334","imageUri":"%s"}]' 860061945305.dkr.ecr.ap-south-1.amazonaws.com/return-management-851334:apigateway851334 > taskdefinition.json
 
 artifacts:
   files: taskdefinition.json
