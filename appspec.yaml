@@ -6,5 +6,5 @@ Resources:
         TaskDefinition: "arn:aws:ecs:ap-south-1:860061945305:task-definition/apigateway:1"
         LoadBalancerInfo:
           ContainerName: "apigateway"
-          ContainerPort: "9004"
+          ContainerPort: "9005"
         PlatformVersion: "LATEST"
